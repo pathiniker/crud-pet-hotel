@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>CRUD Pets Hotel</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="vendor/jquery-3.1.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<h2>CRUD Pets Hotel</h2>
+
+<h3>Owner Registration</h3>
+  <form id="owner">
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" />
+
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" />
+
+    <button type="submit" class="owner_register">Register</button>
+  </form>
+
+<h3>Pets</h3>
+
+<select id="owner_select">
+  <option value="Steve">
+    Steve
+  </option>
+  <option value="Molly">
+    Molly
+  </option>
+</select>
+
+<form id="pets">
+  <label for="pet_name">Pet Name</label>
+  <input type="text" name="pet_name" />
+
+  <label for="pet_type">Pet Type</label>
+  <input type="text" name="pet_type" />
+
+  <label for="pet_color">Pet Color</label>
+  <input type="text" name="pet_color" />
+
+  <button type="submit" class="pet_register">Add Pet</button>
+</form>
+
+<table id="guests">
+  <tr>
+  <th>Owner</th>
+  <th>Pet</th>
+  <th>Animal</th>
+  <th>Color</th>
+  <th>Update</th>
+  <th>Delete</th>
+  <th>Check In / Out</th>
+  </tr>
+</table>
+
+</body>
+</html>
