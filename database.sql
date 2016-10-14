@@ -19,10 +19,3 @@ id SERIAL PRIMARY KEY,
 check_in DATE NOT NULL,
 check_out DATE
 );
-
--- 4. create owner_pets TABLE
-CREATE TABLE owner_pets (
-owner_id INT REFERENCES owner,
-pets_id INT REFERENCES pets,
-PRIMARY KEY (owner_id, pets_id)
-);

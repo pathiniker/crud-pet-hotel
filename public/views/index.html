@@ -5,9 +5,9 @@
     <title>CRUD Pets Hotel</title>
 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="vendor/jquery-3.1.1.min.js"></script>
-    <script src="app.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../vendors/jquery-3.1.1.min.js"></script>
+    <script src="../scripts/client.js"></script>
 </head>
 <body>
 
@@ -26,16 +26,15 @@
 
 <h3>Pets</h3>
 
-<select id="owner_select">
-  <option value="Steve">
-    Steve
-  </option>
-  <option value="Molly">
-    Molly
-  </option>
-</select>
+
+
+
 
 <form id="pets">
+  <p>
+  Select Owner: <select name="owner_id" id="owner_select"></select>
+  </p>
+
   <label for="pet_name">Pet Name</label>
   <input type="text" name="pet_name" />
 
@@ -49,7 +48,8 @@
 </form>
 
 <table id="guests">
-  <tr>
+  <thead>
+    <tr>
   <th>Owner</th>
   <th>Pet</th>
   <th>Animal</th>
@@ -57,6 +57,10 @@
   <th>Update</th>
   <th>Delete</th>
   <th>Check In / Out</th>
+    </tr>
+</thead>
+  <tr id="table-rows">
+
   </tr>
 </table>
 
